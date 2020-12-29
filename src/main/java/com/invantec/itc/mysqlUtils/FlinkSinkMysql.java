@@ -73,7 +73,7 @@ public class FlinkSinkMysql {
 					throws Exception {
 				ArrayList<Student> students = Lists.newArrayList(values);
 				if(students.size() > 0) {
-					System.out.println("1分钟内收集到student--" + students.size() + "条数据；");
+					System.out.println("3秒内收集到student--" + students.size() + "条数据；");
 					out.collect(students);
 				}
 				
